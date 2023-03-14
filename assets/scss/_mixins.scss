@@ -1,1 +1,38 @@
 // Mixins
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// RWD mixin
+// Phone (Portrait) < 768px
+@mixin media-breakpoint-phone() {
+  @include media-breakpoint-down(md) {
+    @content;
+  }
+}
+
+// Phone (Landscape) > 576px & < 768px
+@mixin media-breakpoint-land-phone() {
+  @include media-breakpoint-between(xs, md) {
+    @content;
+  }
+}
+
+// Tablet >= 768px & < 1200px
+@mixin media-breakpoint-pad() {
+  @include media-breakpoint-between(md, xl) {
+    @content;
+  }
+}
+
+// Smart phone + Tablet < 1200px
+@mixin media-breakpoint-mobile() {
+  @include media-breakpoint-down(xl) {
+    @content;
+  }
+}
+
+// Monitor > 1200px
+@mixin media-breakpoint-pc() {
+  @include media-breakpoint-up(xl) {
+    @content;
+  }
+}

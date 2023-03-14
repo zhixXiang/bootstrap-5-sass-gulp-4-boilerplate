@@ -33,3 +33,10 @@ Install Gulp cli
    - Overriding Bootstrap variable: assets/scss/_bootstrap_variable_overrides.scss
    - Custom SCSS: assets/scss/_general.scss, assets/scss/_layout.scss, assets/scss/_mixins.scss, assets/scss/_module.scss, _variables.scss
    - Custom App Javascript: assets/js/app.js
+
+[Nancy Memo]
+1. 看看有沒有 node_modules ，如果沒有的話先在終端機輸入:
+   `npm install`
+
+2. 輸入 `gulp`  - 開始編譯
+3. 輸入 `gulp dev` - 將 localhost 開起來並開始監聽(HTML, SCSS, JS)
